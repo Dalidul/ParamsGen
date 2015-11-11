@@ -55,10 +55,10 @@ class AnnealingModule(object):
                 if random.random() <= probability:
                     result = point_and_time
                     index_to_remove = index
-                    print(print("Prob: " + str(probability) + " --- " + "(+)"))
+                    print("Prob: " + str(probability) + " --- " + "(+)")
                     break
                 else:
-                    print(print("Prob: " + str(probability) + " --- " + "(-)"))
+                    print("Prob: " + str(probability) + " --- " + "(-)")
         self.__thermometer.cool()
         if result is not None:
             self.__points_and_time.pop(index_to_remove)
